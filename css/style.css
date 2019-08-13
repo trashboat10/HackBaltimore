@@ -1773,6 +1773,15 @@ section {
     color: #757575;
 }
 
+.expand {
+    color: #fc4e04;
+}
+
+.collapsable .collapsed.member-bio {
+    height: 200px;
+    overflow: hidden;
+}
+
 .getintouch-organizers__info_social {
     margin-top: 2rem;
     display: flex;

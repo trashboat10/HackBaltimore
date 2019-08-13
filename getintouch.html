@@ -90,7 +90,7 @@ title: Get In Touch
 </section>
 <section class="getintouch-organizers">
   <div id="organizers" class="anchor"></div>
-  <div class="container__column">
+  <div class="container__column collapsable">
     <h2 class="h2__headline headline__center headline__white">Hack Baltimore team</h2>
     <h3 class="h3__headline headline__center">Core organizers</h3>
     <ul class="getintouch-organizers__content content-list">
@@ -102,7 +102,8 @@ title: Get In Touch
         <div class="getintouch-organizers__content_info">
           <h4 class="getintouch-organizers__info_h4">{{ member.name }}</h4>
           <h5 class="getintouch-organizers__info_h5">{{ member.role }}</h5>
-          <p class="getintouch-organizers__info_p">{{ member.bio }}</p>
+          <p class="getintouch-organizers__info_p member-bio collapsed">{{ member.bio }}</p>
+          <button class="expand">expand</button>
           <div class="getintouch-organizers__info_social">
             {% if member.facebook != null %}
             <a href="{{ member.facebook }}" class="getintouch-organizers__info_link" target="_blank" rel="noopener">
