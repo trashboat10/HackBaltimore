@@ -1776,9 +1776,15 @@ section {
     color: #fc4e04;
 }
 
+.collapsable .member-bio {
+    max-height: 600px;
+    transition: max-height 0.5s;
+}
+
 .collapsable .collapsed.member-bio {
-    height: 200px;
+    max-height: 200px;
     overflow: hidden;
+    transition: max-height 0.5s;
 }
 
 .getintouch-organizers__info_social {
